@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}  
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2% 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    position: relative;
+    padding: 8px 12px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #008cff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.content{
+    text-align: center;
+}
+
+.content h1{
+    font-size: 160px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s; 
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    border-radius: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+}
+.btn:hover{
+    border: 1px solid #008cff;
+    color: #008cff;
+    transition: 0.5s;
+}
+.back-video{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    perspective: fill;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 768px){
+    .content h1{
+        font-size: 50px;
+    }
+    .nav-links ul li a{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #008cff;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 0px;
+    }
+    .content a{
+        font-size: 15px;
+        border: 2px solid #fff;
+        padding: 10px 40px;
+        border-radius: 50px;
+        margin-top: 10px;
+    }
+    .back-video{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+    }
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+video{
+    max-width: 100%;
+    height: auto;
+}
+
+/*--------SERVICE-------*/
+
+.serpis{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+  
+.text-section{
+    flex: 1;
+    min-width: 0px;
+    max-width: 6000px;
+}
+  
+.text-section h1{
+    padding-left: 100px;
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+  
+.text-section p{
+    padding-left: 100px;
+    font-size: 16px;
+    margin-top: 20px;
+    color: #2c2c2c;
+    line-height: 1.6;
+}
+  
+.image-section{
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+  
+.image-section img{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+}
+  
+@media (max-width: 768px){
+    .serpis{
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .text-section h1{
+      text-align: center;
+      padding-left: 0;
+    }
+    .text-section p{
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+}
+  
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0px 0px;
+}
+  
+.container h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 50px 0px;
+    padding-bottom: 10px;
+}
+  
+.container p{
+    font-size: 16px;
+    line-height: 1.6;
+}
+  
+.container ul{
+    padding-left: 20px;
+    margin-top: 10px;
+}
+  
+.service-section{
+    margin-top: 30px;
+}
+
+.kotakk{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 40px;
+    padding-bottom: 50px;
+}
+  
+.kotak{
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 1 1 48%;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+}
+.kotak:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+  
+.kotak img{
+    width: 100%;
+    height: auto;
+}
+  
+.kotak-content{
+    padding: 20px 30px;
+}
+  
+.kotak-content h4{
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.find{
+    display: inline-block;
+    margin-top: 10px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+.find:hover{
+    text-decoration: underline;
+  }
+
+@media (max-width: 768px){
+    .container h2{
+        padding-left: 25px;
+    }
+    .container p{
+        padding-left: 25px;
+    }
+    .container ul{
+        padding-left: 55px;
+    }
+}
+
+/*----------footer--------*/
+.site-footer{
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #5c5e62;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+}
+
+.footer-note p{
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+
+.footer-note a{
+    color: #5c5e62;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.footer-note a:hover{
+    border-bottom: 1px solid #5c5e62;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-links a{
+    color: #5c5e62;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.footer-links a:hover{
+    border-bottom: 1px solid #5c5e62;
+}

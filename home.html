@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | ShipDecKK</title>
+    <link rel="icon" href="logoo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div  class="header">
+        <video autoplay loop muted class="back-video"> 
+            <source src="images/1.mp4"controls type="video/mp4">
+        </video> 
+         <nav>
+            <a href="home.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navigasi">
+                <i class="fa fa-times" onclick = "hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="subscription.html">SUBSCRIPTION</a></li>
+                </ul> 
+            </div>
+            <i class="fa fa-bars" onclick = "showMenu()"></i>
+        </nav>
+    <div class="content">
+        <h1>ShipDecKK</h1>
+        <a href="#explore-section" class="btn">Learn More</a>
+    </div>
+    </div>
+
+<!-------EXPLORE-------->
+
+    <div class="explore" id="explore-section">
+        <h1>Explore Our Ship</h1>
+        <p>The Original Ship. Design and Built in America.</p>
+
+        <div class="row">
+            <div class="explore-col">
+                <h3>Distinguished Design</h3>
+                <p>The most desirable ship ever created, seamlessly blending exquisite luxury, state-of-the-art innovation, and timeless elegance to offer an unparalleled experience at sea for the world’s most discerning and privileged travelers.</p>
+            </div>
+            <div class="explore-col">
+                <h3>Capable Across The Sea</h3>
+                <p>Sets new standards in performance, efficiency, and refinement, delivering an exceptional maritime experience. With advanced engineering and elegant design, it offers smooth sailing, remarkable fuel economy, and luxurious comfort across every journey on the open seas.</p>
+            </div>
+            <div class="explore-col">
+                <h3>Refinement and Luxury</h3>
+                <p>Offers sumptuous comfort for up to seven thousand adults, combining elegant design, world-class amenities, and personalized service to create an extraordinary voyage where every guest experiences true indulgence and unforgettable moments at sea.</p>
+            </div>
+        </div>        
+    </div>
+
+<!---------MODELS--------->
+    <div class = "models">
+        <h1>Our Models</h1>
+        <p>Find our Ship Model that's right for you.</p>
+        <div class="row">
+            <div class="models-col">
+                <img src="images/yatch2.jpg">
+                <div class="layer">
+                    <h3>HIGH-END YATCH</h3>
+                </div>
+            </div>
+            <div class="models-col">
+                <img src="images/cargo3.jpg">
+                <div class="layer">
+                    <h3>CARGO SHIPS</h3>
+                </div>
+            </div>
+            <div class="models-col">
+                <img src="images/liners1.jpg">
+                <div class="layer">
+                    <h3>LUXURY LINERS</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-------FOOTER-------->
+    <footer class="site-footer">
+        <div class="footer-note">
+            <p>
+                <sup>1</sup> A ship from ShipDecKK is as unique as its owner—crafted to reflect individual needs and aspirations. We’re here to help you discover your perfect vessel through our trusted ShipDecKK dealership network and immersive online platform.
+            </p>
+        </div>
+        <div class="footer-links">
+            <h4>&copy; 2020 ShipDecKK</h4> <!--(&copy -> untuk buat huruf @)-->
+            <a href="#">Privacy & Legal</a>
+            <a href="#">Selling Ships</a>
+            <a href="#">Contact</a>
+            <a href="#">News</a>
+            <a href="#">Get Updates</a>
+            <a href="#">Locations</a>
+            <a href="#">Learn</a>
+        </div>
+    </footer>
+    
+
+<script src="script.js"></script>
+</body>
+</html>
